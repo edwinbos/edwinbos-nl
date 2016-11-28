@@ -1,0 +1,17 @@
+.small-head {
+  height: 70px;
+  opacity: 0;
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  transition: opacity 700ms ease-in-out;
+}
+
+.container--introduction.is-fixed .small-head {
+  opacity: 0.9;
+}
+
+.container--introduction.is-fixed .small-head:hover {
+  opacity: 1;
+  cursor: pointer;
+}

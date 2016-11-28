@@ -1,0 +1,30 @@
+.post {
+  &__content {
+
+  }
+
+  &__content h3 {
+    font-size: 34px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  &__meta {
+    text-align: center;
+  }
+
+  h3:after {
+    background: linear-gradient(
+      135deg, $color-primary 0%,
+      $color-primary-gradient-fade 100%
+    );
+    content: "";
+    display: inline-block;
+    height: 3px;
+    left: 5px;
+    position: relative;
+    transform: rotate(-45deg);
+    top: -10px;
+    width: 35px;
+  }
+}

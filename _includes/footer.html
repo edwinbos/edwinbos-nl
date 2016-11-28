@@ -1,0 +1,83 @@
+<footer class="footer">
+
+    <div class="footer__top">
+
+      <svg class="icon footer__head">
+        <use xlink:href="#head"></use>
+		  </svg>
+
+    </div>
+
+</footer>
+<script>
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  var $body = document.querySelector('body');
+  var $headerTitle = document.querySelector('.js-header-title');
+  var $navigationLink = document.querySelectorAll('.js-navigation-link');
+
+  // When the user clicks on the head title show the full page
+  $headerTitle.addEventListener('click', function(event) {
+    event.preventDefault();
+    $body.classList.toggle('is-full-page');
+    window.history.pushState(null, null, '/');
+
+    for (var i = 0; i < $navigationLink.length; i++) {
+      $navigationLink[i].classList.remove('is-active');
+    }
+  });
+
+  setActiveNavigationLink();
+
+  // Loop through all navigation links and add event listner to click
+  for (var i = 0; i < $navigationLink.length; i++) {
+    $navigationLink[i].addEventListener('click', function(event) {
+
+      // Only load with javascript when current page is full width / height
+      if ($body.classList.contains('is-full-page')) {
+        event.preventDefault();
+
+        var url = this.getAttribute('href');
+
+        // Check if fecth is supported
+        if (self.fetch) {
+
+          // Fetch the html
+          fetch(url).then(function(response) {
+            var html = response.text();
+
+            html.then(function(val) {
+              var element = document.createElement("div");
+              element.innerHTML = val;
+              var pageContent = element.querySelector('.js-page-content')
+              document.querySelector('.page').innerHTML = pageContent.outerHTML;
+            });
+
+            $body.classList.toggle('is-full-page');
+            window.history.pushState(null, null, url);
+            setActiveNavigationLink(url);
+          });
+        }
+      }
+    });
+  }
+});
+
+function setActiveNavigationLink(url = null)
+{
+  var $navigationLink = document.querySelectorAll('.js-navigation-link');
+
+  if (url == null) {
+    url = window.location.pathname;
+  }
+
+  for (var i = 0; i < $navigationLink.length; i++) {
+    var href = $navigationLink[i].getAttribute('href');
+    if (href.indexOf(url) != -1) {
+      $navigationLink[i].classList.add('is-active');
+    }
+  }
+
+}
+
+</script>

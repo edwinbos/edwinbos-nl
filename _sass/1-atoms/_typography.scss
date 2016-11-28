@@ -1,0 +1,129 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400");
+// @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-thin-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-extralight-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-extralight-webfont.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/montserrat/montserrat-black-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat/montserrat-black-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+  color: #333;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 50px 0 0 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 42px;
+  margin: 50px 0 40px 0;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+h2:after {
+  width: 70%;
+  height: 3px;
+  background: #333;
+  display: block;
+  content: "";
+  position: absolute;
+  left: 15%;
+  bottom: 0;
+}
+
+h3 {
+  display: inline-block;
+  font-size: 42px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+p {
+  text-align: left;
+}
+
+@media screen and (min-width: 640px)
+{
+    h2 {
+      margin-top: 100px;
+    }
+}

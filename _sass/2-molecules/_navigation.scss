@@ -1,0 +1,31 @@
+.navigation {
+  align-self: center;
+  display: flex;
+  list-style: none;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+
+  &__link {
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    transition: border-color 250ms ease-in-out;
+  }
+
+  &__link:hover,
+  &__link.is-active {
+    border-color: rgba(255,255,255,0.75);
+  }
+}
+
+@media screen and (min-width: 640px)
+{
+  .navigation {
+    &__link {
+      padding: 25px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<h2>Articles</h1>
+
+{{ content }}
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li class="post-list__item">
+      <div class="post-list__intro" style="background-image:url('{{post.thumbnail}}');">
+        <div class="post-list__header">
+          <span class="post-list__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3>
+            <a class="post-list__title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          </h3>
+        </div>
+      </div>
+      <div class="post-list__excerpt">
+        {{ post.excerpt }}
+        <a class="post-list__read-more" href="{{ post.url | relative_url }}">Read full article</a>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

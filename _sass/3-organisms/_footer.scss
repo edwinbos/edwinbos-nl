@@ -1,0 +1,39 @@
+.footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 75vw;
+
+  &__top {
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &:before,
+    &:after {
+      background: $color-dark;
+      content: "";
+      display: block;
+      height: 3px;
+      position: absolute;
+      top: 78px;
+      width: calc(50% - 40px);
+    }
+
+    &:before {
+      left: 0;
+    }
+
+    &:after {
+      right: 0;
+    }
+  }
+
+  &__head {
+    fill: #333;
+    transform: rotate(10deg);
+    width: 60px;
+  }
+}

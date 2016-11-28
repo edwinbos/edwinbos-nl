@@ -1,0 +1,32 @@
+<header class="header" role="banner">
+  <div class="header__introduction">
+    <svg class="icon header__head">
+      <use xlink:href="#head"></use>
+    </svg>
+    <div class="header__content">
+      <h1 class="header__title">Edwin Bos</h1>
+
+      <p>UI/UX designer &amp; Webdeveloper</p>
+
+      <div class="header__social">
+        <a href="http://tinyurl.com/EDBOS" class="linkedin"
+           title="Linkedin van Edwin Bos - User Interface, User Experience designer en webdeveloper">
+           <svg class="icon header__linkedin">
+             <use xlink:href="#linkedin"></use>
+           </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="header__navigation-wrapper">
+    <a class="header__title js-header-title" href="{{ "/" | relative_url}}">
+      <svg class="icon header__head-small">
+        <use xlink:href="#head"></use>
+      </svg>
+      <span>{{ site.title | escape }}</span>
+    </a>
+    <div class="header__navigation">
+      {% include navigation.html %}
+    </div>
+  </div>
+</header>
