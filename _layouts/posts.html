@@ -9,17 +9,18 @@ layout: default
 <ul class="post-list">
   {% for post in site.posts %}
     <li class="post-list__item">
-      <div class="post-list__intro" style="background-image:url('{{post.thumbnail}}');">
+      <img class="post-list__image" src="{{post.thumbnail}}" />
+      <div class="post-list__content">
         <div class="post-list__header">
-          <span class="post-list__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h3>
-            <a class="post-list__title" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <span class="post-list__meta">{{ post.date | date: "%-d %B %Y" }}</span>
+          <h3 class="post-list__title">
+            <a class="post-list__title-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
           </h3>
         </div>
-      </div>
-      <div class="post-list__excerpt">
-        {{ post.excerpt }}
-        <a class="post-list__read-more" href="{{ post.url | relative_url }}">Read full article</a>
+        <div class="post-list__excerpt">
+          {{ post.excerpt }}
+          <a class="post-list__read-more" href="{{ post.url | relative_url }}">Read full article</a>
+        </div>
       </div>
     </li>
   {% endfor %}

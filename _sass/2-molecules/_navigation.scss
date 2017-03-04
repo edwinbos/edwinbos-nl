@@ -13,11 +13,14 @@
     padding: 15px;
     text-decoration: none;
     transition: border-color 250ms ease-in-out;
-  }
 
-  &__link:hover,
-  &__link.is-active {
-    border-color: rgba(255,255,255,0.75);
+    &:hover,
+    &.is-active,
+    &:active,
+    &:focus {
+      border-color: rgba(255,255,255,0.75);
+      outline: none;
+    }
   }
 }
 

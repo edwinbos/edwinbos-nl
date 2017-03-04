@@ -1,7 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 $color-primary: #e44c4b;
 $color-primary-gradient-fade: #e47e4b;
 
 $color-dark: #333;
+$color-light-grey: #ccc;
 $color-white: #fff;
 
 $color-text-default: $color-dark;

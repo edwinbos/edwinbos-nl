@@ -47,11 +47,35 @@
   }
 
   &__title {
+    border: 2px solid transparent;
     margin-top: 0;
+
+    &:focus {
+      border-color: rgba(255,255,255,0.75);
+      outline: none;
+    }
   }
 
   &__social {
     text-align: center;
+  }
+
+  &__social-link {
+    display: inline-block;
+    outline: none;
+    position: relative;
+
+    &:focus:after {
+      border: 2px solid rgba(255,255,255,0.75);
+      content: "";
+      display: block;
+      height: 100%;
+      left: -7px;
+      padding: 5px;
+      position: absolute;
+      top: -7px;
+      width: 100%;
+    }
   }
 
   &__linkedin {
@@ -96,6 +120,10 @@
 
     &__head-small {
       opacity: 0;
+    }
+
+    &__title:focus {
+      border-color: transparent;
     }
   }
 }
