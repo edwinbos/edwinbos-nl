@@ -1,9 +1,9 @@
 ---
+title: 'Front-end ontwikkeling in Magento 2: Deel #2'
 layout: post
-title:  "Front-end ontwikkeling in Magento 2: Deel #2"
-date:   2016-9-12 21:32:18 +0200
+date: '2016-09-12 21:32:18 +0200'
 categories: jekyll update
-thumbnail: "/media/post/croissant.jpg"
+thumbnail: "/media/post/magento.svg"
 ---
 
 Vorige week heb ik geschreven over het gebruik van SASS/SCSS in Magento 2 en

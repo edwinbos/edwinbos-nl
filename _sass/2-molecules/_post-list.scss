@@ -9,6 +9,7 @@
   }
 
   &__image {
+    max-height: 335px;
     width: 100%;
   }
 
@@ -24,7 +25,7 @@
   &__title {
     display: block;
     hyphens: auto;
-    margin: 0;
+    margin: 5px 0 0;
   }
 
   &__excerpt {

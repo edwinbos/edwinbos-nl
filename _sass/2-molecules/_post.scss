@@ -12,7 +12,8 @@
 
   &__image {
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
+    max-height: 335px;
     max-width: 100%;
     opacity: 0;
     transform: translateY(-70px);

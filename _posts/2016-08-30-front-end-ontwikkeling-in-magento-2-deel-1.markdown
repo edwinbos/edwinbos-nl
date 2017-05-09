@@ -1,9 +1,9 @@
 ---
+title: 'Front-end ontwikkeling in Magento 2: Deel #1'
 layout: post
-title:  "Front-end ontwikkeling in Magento 2: Deel #1"
-date:   2016-8-30 21:32:18 +0200
+date: '2016-08-30 21:32:18 +0200'
 categories: jekyll update
-thumbnail: "/media/post/camera.jpg"
+thumbnail: "/media/post/magento.svg"
 ---
 
 Magento 2 is alweer een tijdje geleden uitgekomen, in november 2015 om precies te zijn. Nu is het tijd dat we echt beginnen te bouwen. Voor Magento 2 heb je namelijk veel meer nodig dan alleen een Magento installatie en een webserver om te starten, zoals bij Magento 1 het geval was. Voor Magento 2 hebben we een veel geavanceerdere ontwikkelomgeving nodig met een lokale Nginx server, Front-end tools, build en test server etc.

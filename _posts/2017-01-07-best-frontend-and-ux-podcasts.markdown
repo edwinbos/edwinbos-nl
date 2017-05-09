@@ -1,13 +1,13 @@
 ---
+title: Best Front-end and UX podcasts
 layout: post
-title:  "Best Front-end and UX podcasts"
-date:   2017-01-07 09:32:18 +0200
+date: '2017-01-07 08:32:18 +0100'
 categories: front-end
 thumbnail: "/media/post/headphone_1500.jpg"
-author: "Edwin Bos"
+author: Edwin Bos
 ---
 
-Listening to a podcast is an easy way to keep up-to-date with the latest trends. I made a list of the best Front-End and User Experience podcasts I listen to.
+Listening to a podcast is an easy way to keep up-to-date with the latest trends. I made a list of the best Front-End and User Experience podcasts.
 
 ### Front-end podcast
 
@@ -92,11 +92,11 @@ Subscribe on <a href="itpc://feeds.feedburner.com/uxpodcast">Itunes</a> or <a hr
 <dt>UIE Brain Sparks</dt>
 <dd>
 User Interface Engineering is a leading research, training, and consulting firm specializing in web site and product usability. Jared M. Spool and his team of researchers oversee a variety of events and publications.
-<p>Website <a href="https://www.uie.com/brainsparks/topics/podcasts/" title="Go to uie.com/brainsparks/topics/podcasts">uie.com/brainsparks/topics/podcasts</a> | Subscribe with <a href="https://www.uie.com/brainsparks/feed/">RSS</a></p>
+<p>Website <a href="https://www.uie.com/brainsparks/topics/podcasts/" title="Go to uie.com/brainsparks/topics/podcasts">uie.com/.../podcasts</a> | Subscribe with <a href="https://www.uie.com/brainsparks/feed/">RSS</a></p>
 </dd>
 <dt>UX-radio</dt>
 <dd>
--.-
+UX-radio, Inc. was created by lara fedoroff out of a love for user-centered design, information architecture, content strategy, interaction and design. Her background is in marketing, Information Architecture, and user experience.
 <p>Website <a href="http://ux-radio.com/" title="Go to ux-radio.com">ux-radio.com</a> | Subscribe with <a href="http://ux-radio.com/feed/podcast">RSS</a></p>
 </dd>
 <dt>UXpod</dt>
