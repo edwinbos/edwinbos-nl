@@ -8,8 +8,8 @@
 
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <script type="text/javascript" async="" src="{{ "/assets/js/script.js" | relative_url }}"></script>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | absolute_url }}">
+  <script src="{{ "/assets/js/script.js" | absolute_url }}" async></script>
 
-  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ "/assets/images/favicon.png" | absolute_url }}">
 </head>

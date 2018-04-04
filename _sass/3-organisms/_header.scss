@@ -48,14 +48,9 @@
   }
 
   &__logo {
-    border: 2px solid transparent;
     margin-top: 0;
+    outline: none;
     text-align: left;
-
-    &:focus {
-      border-color: rgba(255,255,255,0.75);
-      outline: none;
-    }
   }
 
   &__social {
