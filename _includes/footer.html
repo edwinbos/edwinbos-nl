@@ -1,11 +1,15 @@
 <footer class="footer">
-
     <div class="footer__top">
-
       <svg class="icon footer__head">
         <use xlink:href="#head"></use>
 		  </svg>
-
     </div>
-
 </footer>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('{{ "/assets/js/sw.js" | absolute_url }}');
+    });
+  }
+  </script>
