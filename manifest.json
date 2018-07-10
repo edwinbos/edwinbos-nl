@@ -1,12 +1,12 @@
 {
 	"lang": "en",
-	"name": "Edwin Bos - front-end UI/UX Developer from The Netherlands",
+	"name": "Edwin Bos - Front-End & UI/UX Developer",
 	"short_name": "Edwin Bos",
 	"description": "",
 	"theme_color": "#ffffff",
-	"background_color": "#ffffff",
+	"background_color": "#e44c4b",
 	"start_url": ".",
-	"display": "minimal-ui",
+	"display": "standalone",
 	"icons": [
         {
             "src": "/assets/images/favicons/android-chrome-192x192.png",
